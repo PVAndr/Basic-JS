@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let celsius = +prompt("Введите температуру в градусах Цельсия");
+        let fahrenheit = (9 / 5) * celsius + 32;
+        alert("Температура в градусах Фаренгейта равна: " + fahrenheit);
+    </script>
+    <script>
+        'use strict'
+        let name = "Василий";
+        let admin = name;
+        console.log(admin);
+    </script>
+    <script>
+        // Здесь производится операция сложения первых двух чисел, с последующей конкатенацией со строчной 10.
+        console.log(10 + 10 + "10");
+        // Здесь в обоих операциях сложения присутствует строчный операнд, из-зи этоко происходит конкатенация всех элементов.
+        console.log(10 + "10" + 10);
+        // Здесь знак + перед строкой "10" является унарным, поэтому происходит сложение всех элементов.
+        console.log(10 + 10 + +"10");
+        // Здесь из-за унарного минуса результатом вычислений будет являться -Infinity, так как пустые кавычки приравниваются к 0 (ХЗ почему, видимо я что-то пропустил).
+        console.log(10 / -"");
+        // Здесь результатом вычислений будет NaN, так как из-зи запятой вместо точки 2,5 будет являться строкой, а не числом.
+        console.log(10 / +"2,5");
+    </script>
+</body>
+
+</html>
